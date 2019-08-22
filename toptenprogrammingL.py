@@ -4,7 +4,6 @@
 import requests
 import urllib.request
 import time
-from tabulate import tabulate
 from bs4 import BeautifulSoup
 
 
