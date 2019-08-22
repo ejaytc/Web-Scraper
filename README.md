@@ -12,7 +12,7 @@ You can run the program by:(Windows)
 ```
 python3  toptenprogrammingL.py
 ```
-or you can make the program executable:
+or you can make the program executable:(GNU/Linux)
 ```
 $chmod +x toptenprogrammingL.py
 ```
