@@ -8,7 +8,11 @@ Requirement: Python 3
 
 you can download here: [Python](https://www.python.org/downloads/)
 
-You can run the program by:
+You can run the program by:(Windows)
 ```
-$python3  toptenprogrammingL.py
+python3  toptenprogrammingL.py
+```
+or you can make the program executable:
+```
+$chmod +x toptenprogrammingL.py
 ```
