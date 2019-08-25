@@ -4,12 +4,11 @@
 import requests
 import urllib.request
 import time
+from tabulate import tabulate
 from bs4 import BeautifulSoup
 
 
 data = dict()
-year = ''
-
 
 def requestpage():
 
@@ -25,10 +24,8 @@ def htmlparser():
 
 
 def getdata():
-    global year
     table           = htmlparser()
     header_year     = str(table.findAll('th')[0]).translate({ord(i):None for i in "<th></th>"})
-    year            = header_year
 
     for i in range(1,11):
          trow =  table.findAll('tr')[i]
@@ -45,9 +42,10 @@ def getdata():
             plrc_data   = str(trow.findAll('td')[h]).translate({ord(i):None for i in "<td></td>"})
             data.setdefault(header_plrc, []).append(plrc_data)
         time.sleep(1)
+    return header_year
 
 if __name__ == "__main__":
-    getdata()
+    year = getdata()
 
     print("{:<25} {:<25} {:<25} {:<25}".format(year,'Programming Language','Rating','Change'))
     
