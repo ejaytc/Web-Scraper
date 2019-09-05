@@ -1,4 +1,4 @@
-#!usr/bin/env python3
+#!/usr/bin/env python3
 #toptenprogrammingL.py: Target => https://www.tiobe.com/tiobe-index/
 
 import requests
