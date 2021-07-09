@@ -7,7 +7,6 @@ from bs4 import BeautifulSoup
 
 
 data = dict()
-headers = ['Programming Language','Rating', 'Change']
 def requestpage():
     page = 'https://www.tiobe.com/tiobe-index/'
     response =  requests.get(page)
